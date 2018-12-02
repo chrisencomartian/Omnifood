@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+*:focus{
+	outline: none;
+}
+
 html{
 	background-color: #fff;
 	color: #555;
@@ -124,7 +128,8 @@ h3{
 }
 
 .button:link, 
-.button:visited{
+.button:visited,
+input[type=submit]{
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
@@ -134,7 +139,8 @@ h3{
 }
 
 .button-full:link, 
-.button-full:visited{
+.button-full:visited,
+input[type=submit]{
 	background-color: #e67e22;
 	color: #fff;
 	border: 1px solid #e67e22;
@@ -148,7 +154,9 @@ h3{
 }
 
 .button:hover, 
-.button:active{
+.button:active, 
+input[type=submit]:hover, 
+input[type=submit]:active{
 	background-color: #cf6d17;
 }
 
@@ -440,4 +448,31 @@ cite img{
 
 .plan-box li{
 	padding: 5px 0;
+}
+
+/*****************/
+/**CONTACT FORM **/
+/*****************/
+
+.contact-form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select, 
+textarea{
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea{
+	height: 100px;
+}
+
+input[type=checkbox]{
+	margin: 10px 5px 10px 0;
 }
