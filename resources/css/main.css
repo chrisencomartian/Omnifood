@@ -469,6 +469,18 @@ textarea{
 	border: 1px solid #ccc;
 }
 
+input::placeholder{
+	font-size: 90%;
+	color: #ccc;
+	font-weight: 100;
+}
+
+textarea::placeholder{
+	font-size: 90%;
+	color: #ccc;
+	font-weight: 100;
+}
+
 textarea{
 	height: 100px;
 }
